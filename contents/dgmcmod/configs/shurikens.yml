@@ -1,0 +1,63 @@
+info:
+  namespace: dgmcmod
+items:
+  iron_shuriken:
+    enabled: true
+    display_name: '铁手里剑'
+    resource:
+      generate: true
+      material: IRON_INGOT
+      texture: dgmcmod:item/iron_shuriken
+  gold_shuriken:
+    enabled: true
+    display_name: '金手里剑'
+    resource:
+      generate: true
+      material: GOLD_INGOT
+      texture: dgmcmod:item/gold_shuriken
+  diamond_shuriken:
+    enabled: true
+    display_name: '钻石手里剑'
+    resource:
+      generate: true
+      material: DIAMOND
+      texture: dgmcmod:item/diamond_shuriken
+
+recipes:
+  crafting_table:
+    iron_shuriken:
+      enabled: true
+      pattern:
+        - XIX
+        - ISI
+        - XIX
+      ingredients:
+        I: IRON_INGOT
+        S: STICK
+      result:
+        item: dgmcmod:iron_shuriken
+        amount: 4
+    gold_shuriken:
+      enabled: true
+      pattern:
+        - XGX
+        - GSG
+        - XGX
+      ingredients:
+        G: GOLD_INGOT
+        S: STICK
+      result:
+        item: dgmcmod:gold_shuriken
+        amount: 4
+    diamond_shuriken:
+      enabled: true
+      pattern:
+        - XDX
+        - DSD
+        - XDX
+      ingredients:
+        D: DIAMOND
+        S: STICK
+      result:
+        item: dgmcmod:diamond_shuriken
+        amount: 4
