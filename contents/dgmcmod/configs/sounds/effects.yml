@@ -1,0 +1,8 @@
+info:
+  namespace: dgmcmod
+sounds:
+  pipe_fall:
+    sound: effects.pipe_fall
+    category: block
+    pitch: 1.0
+    volume: 1.0
