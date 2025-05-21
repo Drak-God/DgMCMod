@@ -14,7 +14,7 @@ items:
     resource:
       generate: true
       material: GOLD_INGOT
-      texture: dgmcmod:item/gold_shuriken
+      texture: dgmcmod:/item/gold_shuriken
   diamond_shuriken:
     enabled: true
     display_name: '钻石手里剑'

@@ -1,0 +1,7 @@
+{
+	"effects.pipe_fall": {
+		"sounds":[
+			"dgmcmod:effects/pipe_fall"
+		]
+	}
+}

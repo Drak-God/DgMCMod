@@ -15,10 +15,11 @@ import org.bukkit.util.Vector;
 
 import dev.lone.itemsadder.api.CustomStack;
 import top.DrakGod.DgMCMod.Global;
+import top.DrakGod.DgMCMod.Functions.Locations;
 
 public class Shurikens implements Global {
-    private static final double DAMAGE_IRON = 5.0;
-    private static final double DAMAGE_GOLD = 8.0;
+    private static final double DAMAGE_IRON = 3.0;
+    private static final double DAMAGE_GOLD = 5.0;
     private static final double DAMAGE_DIAMOND = 10.0;
 
     public Shurikens() {
@@ -70,9 +71,9 @@ public class Shurikens implements Global {
 
         Vector Direction = Player.getLocation().getDirection().normalize();
         Arrow IArrow = Player.launchProjectile(Arrow.class);
-        IArrow.setDamage(getShurikenDamage(Item));
         IArrow.setVisibleByDefault(false);
         IArrow.setVisualFire(false);
+        IArrow.setDamage(getShurikenDamage(Item));
         IArrow.setVelocity(Direction.multiply(1.5));
         IArrow.setPickupStatus(Arrow.PickupStatus.DISALLOWED);
 
@@ -97,7 +98,9 @@ public class Shurikens implements Global {
                     if (IArrow.isOnGround()) {
                         ItemStack NShuriken = Shuriken.getItemStack().clone();
                         NShuriken.setAmount(1);
-                        Player_World.dropItem(IArrow.getLocation(), NShuriken);
+
+                        Location Item_Location = Locations.Find_Empty_Location(IArrow.getLocation());
+                        Player_World.dropItem(Item_Location, NShuriken);
                     }
 
                     this.cancel();
@@ -107,13 +110,11 @@ public class Shurikens implements Global {
                 Location Arrow_Location = IArrow.getLocation();
                 Vector Arrow_Velocity = IArrow.getVelocity();
 
-                double Yaw = Math.toDegrees(Math.atan2(Arrow_Velocity.getX(), Arrow_Velocity.getZ())) - 90;
-
-                Armor_Stand.teleport(Arrow_Location.setDirection(Arrow_Velocity));
+                Armor_Stand.teleport(Arrow_Location.setDirection(Arrow_Velocity).add(0, -1, 0));
                 Armor_Stand.setHeadPose(new EulerAngle(
-                        Math.toRadians(0),
-                        Math.toRadians(Yaw),
-                        Rotation));
+                        Math.toRadians(90 + Arrow_Location.getPitch()),
+                        Rotation,
+                        0));
 
                 Rotation += 0.1;
                 if (Rotation >= 2 * Math.PI) {
