@@ -3,5 +3,30 @@
 		"sounds":[
 			"dgmcmod:effects/pipe_fall"
 		]
+	},
+	"music.billie_jean": {
+		"sounds":[
+			"dgmcmod:music/billie_jean"
+		]
+	},
+	"music.cry_for_me": {
+		"sounds":[
+			"dgmcmod:music/cry_for_me"
+		]
+	},
+	"music.lush_life_x_paradise": {
+		"sounds":[
+			"dgmcmod:music/lush_life_x_paradise"
+		]	
+	},
+	"music.naive_eraser": {
+		"sounds":[
+			"dgmcmod:music/naive_eraser"
+		]
+	},
+	"music.sos": {
+		"sounds":[
+			"dgmcmod:music/sos"
+		]
 	}
 }
