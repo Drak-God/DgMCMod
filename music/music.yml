@@ -1,0 +1,26 @@
+music:
+  billie_jean:
+    name: "Billie Jean"
+    color: 'red'
+    info:
+      - '&c凌驾&eの&a小曲'
+  cry_for_me:
+    name: "Cry For Me"
+    color: 'blue'
+    info:
+      - '&b陈翔&eの&a小曲'
+  lush_life_x_paradise:
+    name: "Lush Life X Paradise"
+    color: 'orange'
+    info:
+      - '&6木屋买买买~'
+  naive_eraser:
+    name: "天真的橡皮"
+    color: 'red'
+    info:
+      - '&c大运&eの&a小曲'
+  sos:
+    name: "SOS"
+    color: 'blue'
+    info:
+      - '&3独攀&eの&a小曲'
