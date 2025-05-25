@@ -12,10 +12,12 @@ import java.util.jar.JarFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import top.DrakGod.DgMCMod.Items.ItemRegister;
+import top.DrakGod.DgMCMod.Functions.FunctionRegister;
 
 public class Main extends JavaPlugin implements Global {
     public Listeners Class_Listeners;
     public ItemRegister Item_Register;
+    public FunctionRegister FunctionRegister;
 
     public boolean Running;
     public String Version;
@@ -30,8 +32,11 @@ public class Main extends JavaPlugin implements Global {
         Server_Log("INFO", "§1┗━━  ┗━━┛ §4┗  ┛ ┗━━┛   §fBy DrakGod");
         Server_Log("INFO", "");
 
+        Check_Data_Folder();
+
         Class_Listeners = new Listeners();
         Item_Register = new ItemRegister();
+        FunctionRegister = new FunctionRegister();
 
         Plugin_Log("INFO", "§1Dg§4MC§bMod§a已启用!");
     }
@@ -68,6 +73,7 @@ public class Main extends JavaPlugin implements Global {
     }
 
     public void Copy_Data() throws IOException {
+        Get_Config();
         try (JarFile Jar_File = new JarFile(Get_Main().Get_File())) {
             Enumeration<JarEntry> Entries = Jar_File.entries();
             File Data_Folder = Get_Data_Folder();

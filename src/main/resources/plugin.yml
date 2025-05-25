@@ -1,7 +1,7 @@
 name: DgMCMod
 main: top.DrakGod.DgMCMod.Main
 version: Beta1.0
-api: "1.20"
+api-version: 1.20
 description: 这是一个专门为DgMC打造的插件
 authors: [Drakgod]
 website: https://dgmc.drakgod.top
@@ -10,6 +10,11 @@ depend: [ItemsAdder]
 commands:
   music:
     description: 打开音乐菜单
-    usage: /music
+    usage: /music <page>
     permission: dgmc.music
     aliases: [m]
+
+permissions:
+  dgmc.music:
+    description: 允许使用音乐菜单
+    default: true

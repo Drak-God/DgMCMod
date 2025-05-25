@@ -6,40 +6,40 @@ items:
     display_name: '红色唱片'
     resource:
       generate: true
-      material: MUSIC_DISC_BLOCKS
+      material: PAPER
       texture: dgmcmod:item/red_disc
   orange_disc:
     enabled: true
     display_name: '橙色唱片'
     resource:
       generate: true
-      material: MUSIC_DISC_BLOCKS
+      material: PAPER
       texture: dgmcmod:item/orange_disc
   yellow_disc:
     enabled: true
     display_name: '黄色唱片'
     resource:
       generate: true
-      material: MUSIC_DISC_BLOCKS
+      material: PAPER
       texture: dgmcmod:item/yellow_disc
   green_disc:
     enabled: true
     display_name: '绿色唱片'
     resource:
       generate: true
-      material: MUSIC_DISC_BLOCKS
+      material: PAPER
       texture: dgmcmod:item/green_disc
   blue_disc:
     enabled: true
     display_name: '蓝色唱片'
     resource:
       generate: true
-      material: MUSIC_DISC_BLOCKS
+      material: PAPER
       texture: dgmcmod:item/blue_disc
   purple_disc:
     enabled: true
     display_name: '紫色唱片'
     resource:
       generate: true
-      material: MUSIC_DISC_BLOCKS
+      material: PAPER
       texture: dgmcmod:item/purple_disc
