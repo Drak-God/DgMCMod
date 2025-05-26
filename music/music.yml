@@ -1,4 +1,9 @@
 music:
+  amuse_oneself:
+    name: "§e自娱自乐"
+    color: 'yellow'
+    lore:
+      - '§edoro§eの§a小曲'
   billie_jean:
     name: "§cBillie Jean"
     color: 'red'
@@ -9,6 +14,11 @@ music:
     color: 'blue'
     lore:
       - '§b陈翔§eの§a小曲'
+  day_light:
+    name: "§5Day Light"
+    color: 'purple'
+    lore:
+      - '§o§e日光之下§a，§e希望§c绽放'
   lush_life_x_paradise:
     name: "§6Lush Life X Paradise"
     color: 'orange'
@@ -19,6 +29,11 @@ music:
     color: 'red'
     lore:
       - '§c大运§eの§a小曲'
+  sacred_play_secret_place:
+    name: "§6Sacred Play Secret Place"
+    color: 'blue'
+    lore:
+      - '§b氛围感§e神曲'
   sos:
     name: "§3SOS"
     color: 'blue'
